@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML und CSS Basics</title>
+
+    <link rel="stylesheet" href="wiederholungs_dezent.css">
+
+    
+    <style>
+        .intern {
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="start">
+        <h1>HTML und CSS Basics</h1>
+        <p>Die Grundlagen einfach erklärt</p>
+    </header>
+
+
+    <nav>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#selektoren">Selektoren</a>
+        <a href="#boxmodel">Box Model</a>
+        <a href="#flexbox">Flexbox</a>
+        <a href="#responsive">Responsive</a>
+    </nav>
+
+
+    <main>
+
+        
+        <section id="html">
+
+            <h2>Was ist HTML?</h2>
+
+            <p>
+                HTML steht für HyperText Markup Language.
+                HTML bestimmt den Aufbau und den Inhalt einer Website.
+            </p>
+
+            <h3>Wichtige HTML-Tags</h3>
+
+            <ul>
+                <li>&lt;h1&gt; Überschrift</li>
+                <li>&lt;p&gt; Textabsatz</li>
+                <li>&lt;a&gt; Link</li>
+                <li>&lt;img&gt; Bild</li>
+                <li>&lt;ul&gt; Liste</li>
+                <li>&lt;table&gt; Tabelle</li>
+            </ul>
+
+        </section>
+
+
+        <!-- CSS -->
+        <section id="css">
+
+            <h2>Was ist CSS?</h2>
+
+            <p>
+                CSS steht für Cascading Style Sheets.
+                Mit CSS wird das Aussehen einer Website verändert.
+            </p>
+
+            <h3>Was kann CSS?</h3>
+
+            <ul>
+                <li>Farben verändern</li>
+                <li>Schriftarten ändern</li>
+                <li>Größen festlegen</li>
+                <li>Abstände einstellen</li>
+                <li>Hintergründe gestalten</li>
+                <li>Elemente positionieren</li>
+            </ul>
+
+
+            <h3>CSS-Syntax</h3>
+
+            <pre>
+p {
+    color: blue;
+    font-size: 20px;
+}
+            </pre>
+
+        </section>
+
+
+        <section>
+
+            <h2>CSS einbinden</h2>
+
+            <h3>1. Inline CSS</h3>
+
+            <p style="color: red;">
+                Dieser Text verwendet Inline CSS.
+            </p>
+
+
+            <h3>2. Internal CSS</h3>
+
+            <p class="intern">
+                Dieser Text wird mit CSS aus dem &lt;style&gt;-Bereich
+                im HTML-Dokument gestaltet.
+            </p>
+
+
+            <h3>3. External CSS</h3>
+
+            <p>
+                Diese Website verwendet hauptsächlich eine externe CSS-Datei:
+            </p>
+
+            <code>
+                &lt;link rel="stylesheet" href="wiederholungs.css"&gt;
+            </code>
+
+        </section>
+
+
+        <section id="selektoren">
+
+            <h2>CSS Selektoren</h2>
+
+            <p>
+                Mit Selektoren bestimmt man, welche HTML-Elemente
+                verändert werden sollen.
+            </p>
+
+
+            <div class="beispiel">
+
+                <h3>Element-Selektor</h3>
+
+                <p>
+                    Beispiel: p { color: blue; }
+                </p>
+
+
+                <h3>Class-Selektor</h3>
+
+                <p class="wichtig">
+                    Dieser Absatz besitzt die Klasse "wichtig".
+                </p>
+
+
+                <h3>ID-Selektor</h3>
+
+                <p id="sondertext">
+                    Dieser Absatz besitzt die ID "sondertext".
+                </p>
+
+
+                <h3>Universal-Selektor</h3>
+
+                <p>
+                    Der Universal-Selektor * würde grundsätzlich
+                    alle Elemente auswählen.
+                </p>
+
+
+                <h3>Attribute-Selektor</h3>
+
+                <input type="text" placeholder="Text eingeben">
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Pseudo-Klassen</h2>
+
+            <p>
+                Pseudo-Klassen reagieren auf bestimmte Zustände
+                eines Elements.
+            </p>
+
+            <a href="#start" class="pseudo-link">
+                Maus über diesen Link bewegen
+            </a>
+
+        </section>
+
+
+        <section id="boxmodel">
+
+            <h2>CSS Box Model</h2>
+
+            <p>
+                Jedes HTML-Element kann als Box betrachtet werden.
+            </p>
+
+            <div class="box">
+
+                <h3>Meine Box</h3>
+
+                <p>
+                    Diese Box besitzt Inhalt, Padding,
+                    Border und Margin.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Display</h2>
+
+            <div class="display-beispiel">
+                <span>Element 1</span>
+                <span>Element 2</span>
+                <span>Element 3</span>
+            </div>
+
+        </section>
+
+
+        <section id="flexbox">
+
+            <h2>Flexbox</h2>
+
+            <p>
+                Mit Flexbox können Elemente einfach
+                nebeneinander oder untereinander angeordnet werden.
+            </p>
+
+            <div class="flex-container">
+
+                <div class="flex-box">
+                    Box 1
+                </div>
+
+                <div class="flex-box">
+                    Box 2
+                </div>
+
+                <div class="flex-box">
+                    Box 3
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>HTML und CSS Unterschied</h2>
+
+            <table>
+
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                </tr>
+
+                <tr>
+                    <td>Struktur</td>
+                    <td>Design</td>
+                </tr>
+
+                <tr>
+                    <td>Überschriften</td>
+                    <td>Farben</td>
+                </tr>
+
+                <tr>
+                    <td>Text</td>
+                    <td>Schrift</td>
+                </tr>
+
+                <tr>
+                    <td>Listen</td>
+                    <td>Abstände</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section id="responsive">
+
+            <h2>Responsive Web Design</h2>
+
+            <p>
+                Responsive Design bedeutet, dass sich eine Website
+                an verschiedene Bildschirmgrößen anpasst.
+            </p>
+
+            <div class="responsive-box">
+                Diese Box verändert sich auf kleinen Bildschirmen.
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Fortgeschrittene CSS-Eigenschaften</h2>
+
+            <div class="special-box">
+                Diese Box verwendet einen Schatten
+                und einen Verlauf.
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>CSS Frameworks</h2>
+
+            <p>
+                Ein CSS Framework stellt fertige CSS-Klassen
+                und Komponenten zur Verfügung.
+            </p>
+
+            <p>
+                Ein bekanntes Framework ist Bootstrap.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            HTML & CSS Basics – Meine Website
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
